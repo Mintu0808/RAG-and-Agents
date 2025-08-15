@@ -31,4 +31,4 @@ Instead of relying solely on the LLM's pre-trained knowledge, RAG retrieves rele
 4. **Generate** → LLM uses both its training + the retrieved content to produce a final answer.
 
 **Workflow Diagram:**
-User Query → Document Retriever → Retrieved Context → LLM → Final Answer
+![RAG Workflow](assests/rag_workflow_diagram.png)
