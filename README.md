@@ -32,3 +32,25 @@ Instead of relying solely on the LLM's pre-trained knowledge, RAG retrieves rele
 
 **Workflow Diagram:**
 ![RAG Workflow](assests/rag_workflow_diagram.png)
+
+
+### 4. Core Components
+- **Retriever** → Finds the most relevant data (semantic search, embeddings, BM25, hybrid search).
+- **Generator** → The LLM that creates the final output.
+- **Knowledge Store** → A database or index for storing and searching documents.
+- **Embedding Model** → Converts text into vector representations for similarity search.
+
+### 5. Example Tech Stack for RAG
+- **Data Storage**: Pinecone, Weaviate, Milvus, FAISS, Azure Cognitive Search, Elasticsearch
+- **Embedding Models**: OpenAI text-embedding-ada-002, Hugging Face sentence transformers
+- **LLMs**: GPT-4, LLaMA, Gemini etc. 
+- **Orchestration**: 
+        LangChain → Popular Python/JS framework for chaining LLM + retrieval steps.
+
+        LlamaIndex (formerly GPT Index) → Simplifies indexing and retrieval for LLMs.
+
+        Haystack (by deepset) → Open-source framework focused on RAG pipelines with Elasticsearch, FAISS, etc.
+
+        CrewAI / AutoGen → For multi-agent and advanced orchestration use cases.
+
+        Ragas → Evaluation + orchestration toolkit for RAG systems.
