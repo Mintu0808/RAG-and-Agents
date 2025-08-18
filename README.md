@@ -45,6 +45,8 @@ Instead of relying solely on the LLM's pre-trained knowledge, RAG retrieves rele
 - **Embedding Models**: OpenAI text-embedding-ada-002, Hugging Face sentence transformers
 - **LLMs**: GPT-4, LLaMA, Gemini etc. 
 - **Orchestration**: 
+        
+  
         LangChain → Popular Python/JS framework for chaining LLM + retrieval steps.
 
         LlamaIndex (formerly GPT Index) → Simplifies indexing and retrieval for LLMs.
