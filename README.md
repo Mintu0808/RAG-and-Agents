@@ -30,6 +30,8 @@ Instead of relying solely on the LLM's pre-trained knowledge, RAG retrieves rele
 3. **Augment** → Add the retrieved documents to the LLM’s input prompt.
 4. **Generate** → LLM uses both its training + the retrieved content to produce a final answer.
 
+---
+
 **Workflow Diagram:**
 ![RAG Workflow](assests/rag_workflow_diagram.png)
 
@@ -42,12 +44,16 @@ Instead of relying solely on the LLM's pre-trained knowledge, RAG retrieves rele
 6. Similarity Search: Find relevant chunks from vector store
 7. Context Augmentation: Combine retrieved chunks with query
 8. Response Generation: LLM generates answer using context
+   
+---
 
 ### 4. Core Components
 - **Retriever** → Finds the most relevant data (semantic search, embeddings, BM25, hybrid search).
 - **Generator** → The LLM that creates the final output.
 - **Knowledge Store** → A database or index for storing and searching documents.
 - **Embedding Model** → Converts text into vector representations for similarity search.
+
+---
 
 ### 5. Example Tech Stack for RAG
 - **Data Storage**: Pinecone, Weaviate, Milvus, FAISS, Azure Cognitive Search, Elasticsearch
